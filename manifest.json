@@ -1,0 +1,23 @@
+{
+    "name": "Speed Controller",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Control your video speed from here",
+    "action": {
+
+        "default_icon": "icon.jpg",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "*://*/*"
+    ],
+
+    "default_icon": {
+        "128": "icon.jpg"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["script.js"]
+    }]
+}
